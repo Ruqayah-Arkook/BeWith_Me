@@ -1,0 +1,22 @@
+<!-- this is for the mother interface -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_shape_background">
+
+
+
+
+    <!-- Include the TextView for the task name -->
+    <TextView
+        android:id="@+id/textTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+
+</LinearLayout>

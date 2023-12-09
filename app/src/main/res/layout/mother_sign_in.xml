@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_rgb"
+    tools:context=".MotherSignIn">
+
+    <TextView
+        android:id="@+id/textViewWelcomeBack"
+        android:layout_width="241dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="145dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Welcome back!"
+        android:textColor="#64131E"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/textViewWelcomeBack"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="36dp"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signing_button"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:theme="@style/Theme.Material3.Light"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="135dp"
+        android:backgroundTint="@color/brown"
+        android:text="Log in" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signing_button"
+        android:layout_marginTop="24dp"
+        android:text="Forgot Password?"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDontHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewForgotPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:text="Don't have an account?"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewForgotPassword"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/textViewDontHaveAccount"
+        android:text="Signup"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

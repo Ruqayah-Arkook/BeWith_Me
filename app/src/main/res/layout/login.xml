@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Material3.Light"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_signup"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:id="@+id/background_image" />
+
+
+
+
+    <!-- First Frame for "login as parent" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/headerTextView"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="25dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_frame_background">
+
+            <Button
+                android:id="@+id/asParentButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="As parent"
+                android:theme="@style/Theme.Material3.Light"
+                android:fontFamily="@font/amaranth"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20dp"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/parentImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/parent" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Second Frame for "login as child" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_child"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="25dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_frame_background">
+
+            <Button
+                android:id="@+id/asChildButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="As child"
+                android:theme="@style/Theme.Material3.Light"
+                android:fontFamily="@font/amaranth"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/childrenImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/children" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Third Frame for "login as social assistant" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_socialAssistant"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="25dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_frame_background">
+
+            <Button
+                android:id="@+id/asSocialButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="As social assistant"
+                android:paddingStart="118dp"
+                android:paddingEnd="8dp"
+                android:gravity="center"
+                android:theme="@style/Theme.Material3.Light"
+                android:fontFamily="@font/amaranth"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/socialAssistantImageView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/social_assistant" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textColor="#64131E"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/amaranth"
+        android:shadowColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who do you want to log in as?"
+        android:textColor="#64131E"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amaranth"
+        android:shadowColor="#FFFFFF"/>
+
+
+
+
+</RelativeLayout>

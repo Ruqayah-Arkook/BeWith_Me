@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/Children"
+        android:title="Child's Emotional Status"
+        android:icon="@drawable/baseline_insert_drive_file_24"/>
+
+    <item android:id="@+id/News"
+        android:title="News"
+        android:icon="@drawable/baseline_newspaper_24"/>
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"/>
+
+
+
+
+</menu>

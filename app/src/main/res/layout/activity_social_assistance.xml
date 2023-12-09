@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_social_assistance_news"
+    tools:context=".SocialAssistance">
+
+    <EditText
+        android:id="@+id/editTextNews"
+        android:layout_width="368dp"
+        android:layout_height="68dp"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/edittext_shape"
+        android:hint="Enter new news" />
+
+    <Button
+        android:id="@+id/buttonAddNews"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/baseline_send_24"
+        android:textSize="25dp" />
+
+    <ListView
+        android:id="@+id/listViewNews"
+        android:layout_width="wrap_content"
+        android:layout_height="397dp"
+        android:layout_below="@+id/editTextNews"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="16dp" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:elevation="2dp"
+        app:menu="@menu/sanavigationbar"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled" />
+
+    <Button
+        android:id="@+id/Go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="163dp"
+        android:background="@drawable/oval_button_background"
+        android:radius="100dp"
+        android:text="go" />
+
+</RelativeLayout>

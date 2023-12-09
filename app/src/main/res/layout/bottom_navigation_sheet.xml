@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Add your options here, e.g., Camera option -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Camera"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        android:id="@+id/camera_option"/>
+
+    <!-- Add your second option, e.g., Icon option -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Icon"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        android:id="@+id/icon_option"/>
+
+</LinearLayout>

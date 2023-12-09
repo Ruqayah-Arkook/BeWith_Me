@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this class is used to rounded the corner in the card view in mother interface -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="18dp" />
+    <solid android:color="#FFFFFF" /> <!-- Background color of the frame -->
+</shape>

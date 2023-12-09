@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Add the RECORD_AUDIO permission -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/bewithme"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CardFeature7"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".SocialAssistantChildEmotionsList"
+            android:exported="false" />
+        <activity
+            android:name=".ReportGenerate"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:label="Be with me"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MotherSignIn" />
+        <activity android:name=".ClickableImageActivity" />
+        <activity android:name=".VoiceRecordActivity" />
+        <activity android:name=".SelectedItemActivity" />
+        <activity android:name=".MainChildInterface" />
+        <activity android:name=".ChildDetectingEmotion" />
+        <activity android:name=".ChildRoutineInterface" />
+        <activity android:name=".SocialAssistance" />
+        <activity android:name=".DisplayNewsActivity" />
+        <activity android:name=".MotherSignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".ChildLoginInterface" />
+        <activity android:name=".ChildAccountActivity" />
+        <activity android:name=".SocialAssistanceSignup" />
+        <activity android:name=".SocialAssistanceLogin" />
+        <activity android:name=".SocialAssistancePDF" />
+        <activity android:name=".ForgotPasswordActivtiy" />
+        <activity android:name=".SocialAssistance_Children" />
+        <activity android:name=".SocialAssistanceListOfChildren" />
+        <activity android:name=".SocialAssistanceAccount" />
+        <activity android:name=".MotherAccount" />
+    </application>
+
+</manifest>

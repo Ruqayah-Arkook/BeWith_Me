@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "119806226640",
+    "firebase_url": "https://createtaskapp-default-rtdb.firebaseio.com",
+    "project_id": "createtaskapp",
+    "storage_bucket": "createtaskapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119806226640:android:208287de861c24a4af6ed5",
+        "android_client_info": {
+          "package_name": "com.app.cardfeature7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119806226640-dqu0mi7gi784jbrpn2sdkbv6qg3s4o5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cardfeature7",
+            "certificate_hash": "eb5103d9d966c018caf1782c364567054434d2ba"
+          }
+        },
+        {
+          "client_id": "119806226640-1p9klvm0e7kbvdh48bogsga93lnh1pnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB1zuFOIZsc9hVj8eERLmcJcXPezGtyqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119806226640-1p9klvm0e7kbvdh48bogsga93lnh1pnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

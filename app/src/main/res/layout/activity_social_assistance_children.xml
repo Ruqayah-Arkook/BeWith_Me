@@ -1,0 +1,87 @@
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_social_assistance_news"
+    android:padding="16dp"
+    tools:context=".SocialAssistance_Children">
+
+    <!-- Name Child -->
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Child's Information"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textViewNameChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="166dp"
+        android:layout_marginBottom="8dp"
+        android:text="Name Child"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/childUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Child's Name"
+        android:inputType="text"
+        android:layout_below="@id/textViewNameChild"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewsharedKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/childUserName"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="272dp"
+        android:layout_marginBottom="8dp"
+        android:text="Shared key"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/sharedKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/childUserName"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter the shared key"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnCreateChild"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharedKey"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="121dp"
+        android:backgroundTint="@color/brown"
+        android:gravity="center"
+        android:text="Create Child"
+        android:theme="@style/Theme.Material3.Light" />
+
+
+
+</RelativeLayout>

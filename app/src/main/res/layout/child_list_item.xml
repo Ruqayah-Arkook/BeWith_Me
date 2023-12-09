@@ -1,0 +1,38 @@
+<!-- res/layout/child_list_item.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="365dp"
+    android:layout_height="50dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_shape_background"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Your child item layout content goes here -->
+    <!-- For example, add a TextView to display child username -->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:paddingLeft="20dp"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/childUserName"
+           android:layout_width="202dp"
+           android:layout_height="wrap_content"
+           android:text="Child Name"
+           android:textSize="30dp" />
+       <TextView
+           android:id="@+id/delete"
+           android:layout_width="67dp"
+           android:layout_height="wrap_content"
+           android:text="Delete"
+           android:textStyle="bold"
+           android:textColor="@color/red"
+           android:textSize="20dp" />
+
+   </LinearLayout>
+
+    <!-- Add more TextViews, ImageViews, etc. as needed -->
+
+</androidx.cardview.widget.CardView>

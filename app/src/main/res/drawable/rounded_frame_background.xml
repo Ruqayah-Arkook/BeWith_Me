@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this class used to round the corner in main child interface and in pdf generator class -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="24dp" /> <!-- Adjust the radius to control the amount of rounding -->
+    <solid android:color="#FFFFFF" /> <!-- Background color of the frame -->
+</shape>
+

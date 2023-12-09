@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/microphone_bg_back"
+    android:theme="@style/Theme.Material3.Light"
+    tools:context=".MainActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_playing"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/playing_animation" />
+
+    <TextView
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/ll_time"
+        android:layout_marginBottom="139dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Say a todo to list an item"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_simple_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/music" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ib_record"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/recording_in_active" />
+
+    <ImageView
+        android:id="@+id/ib_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="155dp"
+        android:layout_toEndOf="@+id/ib_record"
+        android:background="@android:color/transparent"
+        android:src="@drawable/playbutton" />
+
+    <Button
+        android:id="@+id/voice_created"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-100dp"
+        android:layout_marginBottom="70dp"
+        android:layout_toEndOf="@+id/ib_record"
+        android:backgroundTint="#B08968"
+        android:text="Create Voice" />
+
+
+</RelativeLayout>
